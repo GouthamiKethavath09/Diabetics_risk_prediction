@@ -5,10 +5,8 @@ import sqlite3
 import pandas as pd
 
 # ================= DATABASE =================
-conn = sqlite3.connect(
-    "C:\\Users\\hp\\Desktop\\Diabetes_ML_Project\\app\\patients.db",
-    check_same_thread=False
-)
+conn = sqlite3.connect("patients.db", check_same_thread=False)
+
 c = conn.cursor()
 
 # NEW TABLE WITH GENDER
@@ -65,8 +63,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ================= LOAD MODEL =================
-model = joblib.load("C:\\Users\\hp\\Desktop\\Diabetes_ML_Project\\models\\diabetes_model.pkl")
-scaler = joblib.load("C:\\Users\\hp\\Desktop\\Diabetes_ML_Project\\models\\scaler.pkl")
+model = joblib.load("models/diabetes_model.pkl")
+scaler = joblib.load("models/scaler.pkl")
 
 # ================= HEADER =================
 st.markdown("<div class='title'>🩺 Diabetes Risk Prediction Dashboard</div>", unsafe_allow_html=True)
