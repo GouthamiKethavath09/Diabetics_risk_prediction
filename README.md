@@ -1,7 +1,7 @@
 # 🩺 Diabetes Risk Prediction System using Machine Learning
 
 This project is an AI-based health screening system that predicts whether a person is diabetic and estimates the future risk level using machine learning models. It also provides a user-friendly web interface built with Streamlit and stores patient records in a database.
-
+## live link : https://diabeticsriskprediction-9xwpapppp2tcdmeixqghtw8.streamlit.app/
 ---
 
 ## 🎯 Project Objectives
